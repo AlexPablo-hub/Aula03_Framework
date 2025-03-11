@@ -1,29 +1,58 @@
-# aula03
+# Gerenciador de Tarefas com Vue.js 3
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto é uma aplicação de gerenciamento de tarefas desenvolvida com Vue.js 3 e Composition API. A aplicação permite que o usuário:
 
-## Recommended IDE Setup
+- Adicione novas tarefas.
+- Marque tarefas como concluídas ou pendentes.
+- Edite e delete tarefas.
+- Filtre tarefas (todas, pendentes, concluídas).
+- Persista as tarefas utilizando o LocalStorage.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Funcionalidades
 
-## Customize configuration
+- **Adicionar Tarefas:** Insira uma nova tarefa e adicione-a à lista.
+- **Marcar Concluída/Pendente:** Altere o status da tarefa com um clique.
+- **Editar Tarefas:** Ao clicar em "Editar", o conteúdo da tarefa é carregado no input principal para modificação.
+- **Deletar Tarefas:** Remova tarefas da lista.
+- **Filtros:** Visualize tarefas conforme o seu status.
+- **Persistência Local:** As tarefas são salvas automaticamente no LocalStorage do navegador.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Tecnologias Utilizadas
 
-## Project Setup
+- [Vue.js 3](https://vuejs.org/)
+- [Composition API](https://vuejs.org/api/composition-api.html)
+- [Vite](https://vite.dev/)
+- [Bun](https://bun.sh/) (como gerenciador de pacotes e runtime)
+
+## Ambiente de Desenvolvimento
+
+### IDE Recomendada
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+## Configuração do Projeto
+
+Instale as dependências do projeto utilizando Bun:
 
 ```sh
 bun install
 ```
 
-### Compile and Hot-Reload for Development
+### Compilar em Desenvolvimento
 
 ```sh
 bun dev
 ```
 
-### Compile and Minify for Production
+### Compilar Em Produção
 
 ```sh
 bun run build
 ```
+
+## Estrutura do Projeto
+
+- **src/App.vue:** Componente principal da aplicação.
+- **src/components/TarefaItem.vue:** Componente para exibir e gerenciar cada tarefa.
+- **src/assets:** Contém os estilos e demais ativos.
+- **README.md:** Documentação do projeto.
