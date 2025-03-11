@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["es6"]
+  },
+  "exclude": ["node_modules", "dist", "src/components/HelloWorld.vue", "src/components/TheWelcome.vue", "src/components/WelcomeItem.vue"]
+}
